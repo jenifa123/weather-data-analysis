@@ -22,6 +22,6 @@ transform_task = GlueJobOperator(
     aws_conn_id='aws_default',  # You'll need to set up an AWS connection in Airflow
     region_name="ap-south-1",
     iam_role_name='AWSGlueServiceRole-rds',
-    create_job_kwargs ={"GlueVersion": "4.0", "NumberOfWorkers": 2, "WorkerType": "G.1X", "Connections":{"Connections":["redshift-cluster-connection"]},},
+    create_job_kwargs ={"GlueVersion": "4.0", "NumberOfWorkers": 2, "WorkerType": "G.1X", "Connections":{"Connections":["Redshift connection from Glue"]},},
     dag=dag,
 )

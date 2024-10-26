@@ -13,7 +13,6 @@ default_args = {
 
 dag = DAG('transform_redshift_dag', default_args=default_args, schedule_interval="@once",catchup=False)
 
-
 # Define the Glue Job
 transform_task = GlueJobOperator(
     task_id='transform_task',

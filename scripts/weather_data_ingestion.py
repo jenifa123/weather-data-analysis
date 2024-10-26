@@ -56,9 +56,9 @@ redshift_output = glueContext.write_dynamic_frame.from_options(
     connection_options={
         "redshiftTmpDir": "s3://aws-glue-assets-254241970276-ap-south-1/temporary/",
         "useConnectionProperties": "true",
-        "aws_iam_role": "arn:aws:iam::254241970276:role/redshift_role",
+        "aws_iam_role": "arn:aws:iam::254241970276:role/service-role/AmazonRedshift-CommandsAccessRole-20240615T230009",
         "dbtable": "public.weather_data",
-        "connectionName": "redshift-cluster-connection",
+        "connectionName": "Redshift connection from Glue",
         "preactions": "DROP TABLE IF EXISTS public.weather_data; CREATE TABLE IF NOT EXISTS public.weather_data (dt VARCHAR, weather VARCHAR, visibility VARCHAR, temp VARCHAR, feels_like VARCHAR, min_temp VARCHAR, max_temp VARCHAR, pressure VARCHAR, sea_level VARCHAR, ground_level VARCHAR, humidity VARCHAR, wind VARCHAR);",
     },
     transformation_ctx="redshift_output",

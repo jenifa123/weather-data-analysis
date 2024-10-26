@@ -11,15 +11,15 @@ This project creates the End to End ETL Pipeline to automate the process of weat
 
 ## AWS Services Used
 
-1. Amazon S3 : Used to store the weather data extracted from the API in hive style partitioning
-2. AWS Glue : Extracts, transforms, and loads (ETL) data from S3, cleaning and preparing it for analysis
-3. Amazon Redshift : Serves as a data warehouse to store processed data, making it available for advanced querying and reporting
-4. AWS CodeBuild : Automates the build and deployment process for ETL scripts or data processing code, ensuring updates to data pipelines run seamlessly
-5. Amazon MWAA : Orchestrates and schedules data workflows, enabling automation of tasks like data ingestion, transformation, and loading into Redshift
+1. `Amazon S3` : Used to store the weather data extracted from the API in hive style partitioning
+2. `AWS Glue` : Extracts, transforms, and loads (ETL) data from S3, cleaning and preparing it for analysis
+3. `Amazon Redshift` : Serves as a data warehouse to store processed data, making it available for advanced querying and reporting
+4. `AWS CodeBuild` : Automates the build and deployment process for ETL scripts or data processing code, ensuring updates to data pipelines run seamlessly
+5. `Amazon MWAA` : Orchestrates and schedules data workflows, enabling automation of tasks like data ingestion, transformation, and loading into Redshift
 
 ## Steps
 
-### Amazon s3
+### Amazon S3
 
   1. Create one bucket which will store the extracted data from openweathermap API in hive style partitioning.
 
@@ -89,7 +89,7 @@ This project creates the End to End ETL Pipeline to automate the process of weat
 
 ####    DAG2
     
-    ![DAG_2](https://github.com/user-attachments/assets/dd4ac0ab-5be9-491e-bbc8-760d9d755a0e)
+   ![DAG_2](https://github.com/user-attachments/assets/dd4ac0ab-5be9-491e-bbc8-760d9d755a0e)
 
 
 ### Glue Job:
